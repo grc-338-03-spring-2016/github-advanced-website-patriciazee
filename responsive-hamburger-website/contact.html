@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+<meta charset="utf-8">
+<title>Responsive page</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link href="styles/style-responsive.css" type="text/css" rel="stylesheet">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:700,400' rel='stylesheet' type='text/css'>
+
+</head>
+    
+<body>
+
+    <div class="header">
+        <h1>Welcome to GrC 338</h1>
+    </div>
+
+    <div class="row">
+        <div class="menu-btn" >
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </div>
+            <!--end of menu-btn div-->
+       
+<div class="col-2 col-t-3 menu">
+
+    <div class="responsive-menu">
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="professional.html">Professional</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+   </div>
+    <!--end of responsive-menu div--> 
+</div>
+<!--end of col-2 col-t-3 menu div-->
+
+<div class="col-10 col-t-9">
+<section>
+    <h3>Here's My Contact Info</h3>
+    
+	     <ul>
+              <li>Monday 12:00-1:00pm</li>
+		  <li>Tuesday 9:30-11:00am and 2:00-3:00pm</li>
+		  <li>Thursday 9:30-11:00am</li>
+          <li><span style="font-style: oblique;">by arrangement, or if the door’s open stop in.</span></li>
+        </ul><br><br>
+	    
+	    <p>If you see me in the hallway or in my office stop by and I'll do my best to answer your questions. If I'm not around send me an email and I'll get back to you as soon as I can.</p>
+    </section>
+</div>
+        
+</div>
+<!--End of row div-->
+  
+<div class="footer">
+<p class="footertext">Email Howard at: <a href="mailto:hvogl@calpoly.edu"> hvogl@calpoly.edu</a></p>
+		
+		<div class="linkedin">
+		<a href="http://www.linkedin.com/pub/howard-vogl/49/a2b/83">
+		<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" alt="View Howard Vogl's profile on LinkedIn"></a>
+		</div><!--End of Linkedin div-->
+</div>
+<!--End of footer div-->
+    
+    <script type="text/javascript">
+ jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+</script>
+
+</body>
+</html>

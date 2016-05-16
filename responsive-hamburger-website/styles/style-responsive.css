@@ -1,0 +1,247 @@
+
+
+/*border-box doesn't include margin in the width'*/
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+/*Creates a space after the content for the footer*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*Selects column size based on device width*/
+[class*="col-"] {
+    float: left;
+    padding: .5em;
+}
+
+.header {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    background-color:#706f7e;
+    color: #c8eda2;
+    text-align: center;
+    padding: 1% 2% 1% 2%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    color: #7a9063;
+    padding: .5em 0 0 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+p {
+    font-family: Roboto;
+    color: #1b205d;
+    margin: 1em;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: .5em 0 .5em 0 ;
+    margin-bottom: .3em;
+    background-color:#706f7e;
+    color: #eaeced;
+    text-align: center;   
+}
+
+.menu li a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+a:link {
+    color: azure;
+}
+
+a:hover {
+    color: #c8eda2;
+}
+
+a:visited {
+    color: #c8eda2;
+}
+
+section h3 {
+    text-align: left;
+}
+
+blockquote{
+    background: rgba(112, 111, 126, 0.65);
+    padding: .5em;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px rgba(112, 111, 126, 0.45);
+    font-family: Georgia,serif;
+    line-height: 1.5em;
+    color:#eaeced;
+    text-indent: 1.5em;
+    quotes:"\201C" "\201D";  
+}
+
+/*Here are two  pseudo class selectors to apply to blockquote*/
+blockquote:before {
+    content: open-quote;
+    font-family: Georgia,serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #c8eda2;
+}
+
+blockquote:after {
+    content: close-quote;
+    font-family: Georgia,serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #c8eda2;
+}
+
+
+.footer {
+    background-color:#706f7e;
+    color: #c8eda2;
+    text-align: center;
+    font-size: 1.5em;
+    padding: .1em 0 .5em 0;
+    
+}
+
+/*Start of hamburger menu*/
+ 
+.menu-btn span {
+ display: block;
+ width: 22px;
+ height: 2px;
+ margin: 4px 0 0 0;
+ background-color: black;
+ z-index: 99;
+}
+ 
+.responsive-menu{
+ display: none;
+}
+ 
+.expand {
+ display: block; 
+}
+
+/*End of hamburger menu*/
+
+/*CSS for slider*/
+
+.your-class {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #b2bfbb;
+    margin-bottom: 3em;
+}
+.your-class div img{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+/* For mobile devices */
+[class*="col-"] {
+    width: 100%;
+}
+
+ /* For tablets: */
+@media only screen and (min-width: 768px) {
+   
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 1024px) {
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* For tablets: */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 2.8em;
+    }
+    
+    .col-t-3 {
+        border-right: 1px solid #a09fac;
+        height: 24em;
+        margin-top: .5em;
+    }
+    
+    .responsive-menu{
+        display: block;
+    }
+    
+    .menu-btn {
+        display: none;
+    }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 1024px) {
+    
+    body {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    
+    .col-2 {
+        height: 29.5em;
+    }
+    
+    .col-4 {
+        border-right: 1px solid #a09fac;
+        margin-top: .5em;
+         height: 29.5em;
+    }
+}
